@@ -11,6 +11,7 @@ def generate_pseudorandom_numbers(
 
 
 def approx_golomb_dickman_constant(
+    *,
     SAMPLE_SIZE: Final[int] = 100_000,
 ) -> Generator[float, None, None]:
     from sympy import primefactors
